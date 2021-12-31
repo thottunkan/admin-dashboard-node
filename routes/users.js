@@ -35,11 +35,11 @@ router.get("/admin/adds-addu/allusers",async(req,res,next)=> {
   users.forEach(element => {
       userDocIds.push(element._path.segments[1])
   });
-  var allusers = userDocIds;
-  var all = await getallusers(userDocIds);
+  //var allusers = userDocIds;
+  var allusers = await getallusers(userDocIds);
   
-  res.json(all)
-  //res.render("pages/samples/allusers.hbs",{allusers})
+  //res.json(all)
+  res.render("pages/samples/allusers.hbs",{allusers}) //f[0]._ref._path.segments[1]
   
 });
 

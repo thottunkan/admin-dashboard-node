@@ -248,12 +248,14 @@
                         </tr>
                       </thead>
                       <tbody>
+                        
                         {{#each allusers}}
                           <tr>
-                            <td>{{this}}</td>
-                            <td>Photoshop</td>
-                            <td class="text-danger"> thottunkal mannancherry<i class="mdi mdi-arrow-down"></i></td>
-                            <td><button class="btn btn-gradient-primary ">edit</button></td>
+                            <h2></h2>
+                            <td>{{this._fieldsProto.name.stringValue}}</td>
+                            <td>{{this._fieldsProto.phone.stringValue}}</td>
+                            <td class="text-danger">{{this._fieldsProto.address.stringValue}}<i class="mdi mdi-arrow-down"></i></td>
+                            <td><a class="btn btn-gradient-primary " href="/admin/user/edit/{{this._ref._path.segments.[1]}}">edit</button></td>
                             <td><button class="btn btn-gradient-danger ">Delete</button></td>
                           </tr>
                         {{/each}}  
