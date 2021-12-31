@@ -193,6 +193,14 @@
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
+              <a class="nav-link" href="/admin/adds-addu/">
+                <span class="menu-title">Add Sale/User</span>
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+              </a>
+              <a class="nav-link" href="/admin/adds-addu/allusers">
+                <span class="menu-title">All Users</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
             </li>
            
             <li class="nav-item">
@@ -240,11 +248,11 @@
                     <form class="forms-sample">
                       <div class="form-group">
                         <label for="exampleInputUsername1">Username</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                        <input type="text" name="name" class="form-control" id="exampleInputUsername1" placeholder="Username">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Phone Number</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Search Phone num">
+                        <input type="text" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Search Phone num">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Product</label>
@@ -286,22 +294,22 @@
                 </div>
                </div>
               <div class="col-md-6 grid-margin stretch-card">
-                    <div class="card">
+                <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">add customer</h4>
                     <p class="card-description"> annapoorna food products </p>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="/admin/adds-addu/addcust" method="post">
                       <div class="form-group">
                         <label for="exampleInputUsername1">Username</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                        <input type="text" name="name" class="form-control" id="exampleInputUsername1" placeholder="Username">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Ph Number</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <input type="phone" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Email">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <input type="text" name="address" class="form-control" id="exampleInputEmail1" placeholder="Email">
                       </div>
                     
                       {{!-- <div class="form-check form-check-flat form-check-primary">
